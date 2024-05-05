@@ -128,7 +128,7 @@ else:
 
         # Button to generate text
         if st.button("Summarize"):
-            if len(user_text) > 1:
+            if len(user_text) > 250:
                 # Generate text based on user prompt
                 response = co.summarize(text=user_text)
 
@@ -138,7 +138,7 @@ else:
                 # Display in a text box
                 st.text_area("Summarized Text:", value=summarized_text, height=200)
             else:
-                st.error("Enter text before proceeding!")
+                st.error("Minimum character count is 251!")
 
     if selected =="Text Generator":
         st.title("Text Generator")
