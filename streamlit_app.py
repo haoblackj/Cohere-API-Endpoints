@@ -45,6 +45,7 @@ else:
         st.session_state.messages = []
     
     if selected == "Chatbot":
+        st.write("⬅ Access menu")
         st.title("Coral ChatBot")
 
         # Generating the response from the bot
